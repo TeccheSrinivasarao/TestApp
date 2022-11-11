@@ -1,0 +1,242 @@
+{
+	"info": {
+		"_postman_id": "9d60ea34-2e95-471b-b28f-a313848c1537",
+		"name": "sampleApp",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Test",
+			"item": [
+				{
+					"name": "http:localhost:8081/addTest",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":null,\r\n    \"name\":\"Name1\",\r\n    \"gender\":\"male\",\r\n    \"mobileNumber\":\"1234567890\",\r\n    \"emailId\":\"abc@xyz.com\",\r\n    \"aadharNumber\":\"1234-5678-9010-2345\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/addTest",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"addTest"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http:localhost:8081/update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":2,\r\n    \"name\":\"Name2\",\r\n    \"gender\":\"male\",\r\n    \"mobileNumber\":\"1234567891\",\r\n    \"emailId\":\"abc2@xyz.com\",\r\n    \"aadharNumber\":\"2234-5678-9010-2345\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/updateTest",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"updateTest"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http:localhost:8081/getTests",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/getTests",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"getTests"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/deleteTest/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"deleteTest",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "BankCode",
+			"item": [
+				{
+					"name": "http://localhost:8081/addBankCode",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"\",\r\n    \"bankName\": \"SBI\",\r\n    \"branchName\": \"kphb\",\r\n    \"ifscCode\":\"1234567\",\r\n    \"city\":\"Hyd\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/addBankCode",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"addBankCode"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8081/addBankCode",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"4\",\r\n    \"bankName\": \"SBI\",\r\n    \"branchName\": \"kphb\",\r\n    \"ifscCode\":\"12345\",\r\n    \"city\":\"Hyd\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/updateBankCode",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"updateBankCode"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8081/addBankCode Copy",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/getBankCodes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"getBankCodes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8081/deleteBankCode/5",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/deleteBankCode/5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"deleteBankCode",
+								"5"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
